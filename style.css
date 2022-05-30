@@ -1,6 +1,7 @@
+
 .nav_bar{
     display: inline-block;
-    background: white;
+    background: none;
     color: black;
     padding: 9px 20px;
     text-decoration: none;
@@ -11,10 +12,15 @@
 }
 
 nav{
-    background: white;
+    background: none;
     padding: 10px;
     text-align: center;
     font-style: sans-serif;
     font-size: smaller;
 }
 
+body{
+    background: url(imagenes/proyecto3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
