@@ -1,4 +1,5 @@
 
+
 .nav_bar{
     display: inline-block;
     background: none;
@@ -45,15 +46,14 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.buttons {
+.botones {
     min-width: 10px;
     display: flex;
     
     
   }
   
-  .buttons a {
-    text-decoration: none;
+  .botones {
     font-size: 20px;
     top: 30%;
     left: 80%;
@@ -61,14 +61,14 @@ h2 {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: none;
     color: gray;
-    border-radius: 50%;
+    padding: 3%;
+    padding-left: 15%;
     
     transition: all .4s ease-in-out;
   }
   
-  .buttons a:hover {
+  .botones :hover {
       top: 30%;
       left: 80%;
     transform: scale(1.2);
@@ -78,13 +78,100 @@ h2 {
 
 * {
     margin: 0;
-    padding: c;
+    padding: 0;
     box-sizing: content-box;
   }
 
 body{
-    background: url(imagenes/proyecto3.jpg);
+    background: url(imagenes/proyecto3.png);
     background-size: cover;
     background-attachment: fixed;
+
 }
 
+h3 {
+    color: black;
+    font-size: 2em;
+    top: 50%;
+    right: 10ch;
+    transform: translatex(15%) translatey(15%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: #adacac;
+    font-size: 1em;
+    top: 50%;
+    left: 80%;
+    transform: translatex(15%) translatey(15%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn button {
+    height: 20px;
+    width: 100px;
+    margin: 80px 80px;
+    transform: translatex(120%) translatey(15%);
+    z-index: -1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+
+.btn{
+    position: relative;
+    display: inline-flex;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 17px 20px;
+    overflow: hidden;
+    transition: all .4s;
+  }
+  .btn .inner{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+  }
+  .btn button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .btn:hover{
+    transform: scale(1.03);
+  }
+  .btn:hover .inner{
+    left: 0;
+  }
+  .btn1 .inner{
+    background: -webkit-linear-gradient(right, #00dbde,#fc00ff,#00dbde,#fc00ff);
+  
+  
+  }
+  
